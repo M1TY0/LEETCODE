@@ -71,6 +71,31 @@ namespace TestProject1
             double output = Sqrt_x_.Sqrt(input);
             Assert.Equal(answer, output);
         }
+        [Fact]
+        public void Test11()
+        {
+            bool answer = false;
+            string input = "0P";
+            bool output = ValidPalindrome.isPlindrome(input);
+            Assert.Equal(answer, output);
+        }
+        [Fact]
+        public void Test12()
+        {
+            bool answer = true;
+            int input = 1;
+            bool output = ReverseBits.reverseBits(input);
+            Assert.Equal(answer, output);
+        }
+        [Fact]
+        public void Test13()
+        {
+            bool answer = true;
+            int input = 16;
+            bool output = ReverseBits.reverseBits(input);
+            Assert.Equal(answer, output);
+        }
+       
+    }
 
     }
-}
